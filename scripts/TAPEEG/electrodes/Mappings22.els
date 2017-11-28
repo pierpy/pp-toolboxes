@@ -1,0 +1,28 @@
+ES01
+22
+1
+Electrodes
+22
+3
+-30.6535	83.1694	-1.04096	Frontal_Pol_L	 
+-25.5813	46.1371	50.2758	Frontal_Mid_L	 
+-55.1019	52.4004	14.0885	Frontal_Lat_L	 
+-29.8971	-8.33597	64.9653	Central_Mid_L	 
+-64.0045	8.01827	31.8079	Centra_Lat_L	 
+-71.4501	21.6488	-25.5864	Temporal_An_L	 
+-71.3773	-35.1652	-13.7125	Temporal_Pos_L	 
+-62.2246	-38.4212	31.8837	Parietal_Lat_L	 
+-25.0319	-61.1261	50.4736	Parietal_Mid_L	 
+-48.3617	-72.1843	6.38154	Parieto_Occipital_L	 
+-25.656	-89.78	-16.227	Occipital_L	 
+30.6535	83.1694	-1.04096	Frontal_Pol_R	 
+25.5813	46.1371	50.2758	Frontal_Mid_R	 
+55.1019	52.4004	14.0885	Frontal_Lat_R	 
+29.8971	-8.33597	64.9653	Central_Mid_R	 
+64.0045	8.01827	31.8079	Central_Lat_R	 
+71.4501	21.6488	-25.5864	Temporal_Ant_R	 
+71.3773	-35.1652	-13.7125	Temporal_Post_R	 
+62.2246	-38.4212	31.8837	Parietal_Lat_R	 
+25.0319	-61.1261	50.4736	Parietal_Mid_R	 
+48.3617	-72.1843	6.38154	Parieto_Occipital_R	 
+25.656	-89.78	-16.227	Occipital_R	 

@@ -1,0 +1,14 @@
+This is the Matlab source code for the Ragu program. 
+
+This source code is intended to
+- run Ragu on different platforms,
+- inspect and modify the source code to improve the program,
+- compile the code and distribute compiled versions of the program for
+  usage under different platforms.
+
+The entire source is under the GNU AFFERO General Public License that comes
+with the source code.
+
+If you modify the source code please inform me (thomas.koenig@puk.unibe.ch)
+so I try to include appropriate modifications in the original version of
+the program.

@@ -1,0 +1,53 @@
+			Tracks Interpolation
+			====================
+
+			Cartool 3.55 (3521)
+			2016/09/29  20:32
+
+
+
+	Files:
+	------
+Input   EEG File   :                    C:\Users\Pierpaolo\Documents\MATLAB\MicrostatiBetaMotorio\Dati_Microstati_MOTORIO\sidfab_microstati\Mov1\Mov16.ep
+Output  EEG File   :                    C:\Users\Pierpaolo\Documents\MATLAB\MicrostatiBetaMotorio\Dati_Microstati_MOTORIO\sidfab_microstati\Mov1\Mov16.interpolate.ep
+Verbose File (this):                    C:\Users\Pierpaolo\Documents\MATLAB\MicrostatiBetaMotorio\Dati_Microstati_MOTORIO\sidfab_microstati\Mov1\Mov16.interpolate.ep.vrb
+
+
+	From Space:
+	-----------
+Electrodes coordinates file:            C:\Users\Pierpaolo\Documents\MATLAB\MicrostatiBetaMotorio\ElectrodePositions.xyz
+
+Removing electrodes:                    44 55 56 62 67 72 106 123
+
+Orientation, center & normalization:    Use Fiducial coordinate system
+Fiducial Left :                         39
+Fiducial Right:                         108
+Fiducial Front:                         17
+Fiducial Rear :                         74
+Fiducial Top  :                         6
+
+
+	To Space:
+	---------
+Electrodes coordinates file:            C:\Users\Pierpaolo\Documents\MATLAB\MicrostatiBetaMotorio\ElectrodePositions.xyz
+
+Orientation, center & normalization:    Use Fiducial coordinate system
+Fiducial Left :                         39
+Fiducial Right:                         108
+Fiducial Front:                         17
+Fiducial Rear :                         74
+Fiducial Top  :                         6
+
+
+	Co-registration between 'From' and 'To' Spaces:
+	-----------------------------------------------
+Co-registration method:                 Affine transformation (12 parameters)
+Coordinate system:                      Fiducial coordinate system
+
+
+	Interpolation:
+	--------------
+Interpolation method:                   3D Spline
+Degree of the Spline:                   2
+
+

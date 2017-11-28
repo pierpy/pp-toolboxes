@@ -1,0 +1,12 @@
+<?xml VERSION="1.0"?>
+<GUISCRIPT>
+  <SEQUENCE>
+    <NAME VALUE="A@p&gt;B@a"/>
+    <MODULE NAME="R6" KEY="A" ACTION="P"/>
+    <MODULE NAME="Composante" KEY="B" ACTION="A">
+      <PARAM NB="2" NAME="Method">
+      VALUE
+      </PARAM>
+    </MODULE>
+  </SEQUENCE>
+</GUISCRIPT>
