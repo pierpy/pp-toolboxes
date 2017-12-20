@@ -1,0 +1,15 @@
+ICA PARAMETER SETTINGS
+
+High-pass filter cut off frequency [Hz]:  1
+Low-pass filter cut off frequency [Hz]:  80
+Notch filter cut off frequencies [Hz]:  50
+Decimation factor:  2
+ICA method:  tanh
+ICA iteration number:  5
+Number of segments to be excluded: 3
+Skipped Intervals [s]: 
+	2.00 	4.00
+	20.00 	22.00
+	34.00 	35.00
+
+Study type: 	ongoing

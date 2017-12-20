@@ -57,7 +57,7 @@ function [b_model, b_ind, b_loading, exp_var] = modifiedkmeans(self, eeg, n_mod,
                     model(i,:) = mean(eeg(idx,:));
                 else
                     cvm = eeg(idx,:)' * eeg(idx,:);
-                    [v] = pc_evectors(cvm,1,0);
+                    [v] = self.pcevectors(cvm,1,0);
                     model(i,:) = v(:,1)';
                 end
             end

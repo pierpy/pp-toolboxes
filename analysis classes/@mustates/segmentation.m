@@ -32,7 +32,7 @@ function [ clusteringResults ] = segmentation( self, data, gfp_peaks_indices)
             [clusteringResults.CV(q)] = self.computecv(data, mps, ind, ClusterNr(q));
             % calcolo W (dispersion measure)
             [clusteringResults.W(q)] = self.computew(data, ind, ClusterNr(q));
-            [clusteringResults.m(q)] = self.computem(W(data, ind, ClusterNr(q)), Nchans, ClusterNr(q));
+            [clusteringResults.m(q)] = self.computem(self.computew(data, ind, ClusterNr(q)), Nchans, ClusterNr(q));
         end
         clusteringResults.template{q} = mps;
         clusteringResults.clusters{q} = ind;

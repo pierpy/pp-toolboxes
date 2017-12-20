@@ -71,17 +71,23 @@ classdef mustates
                 end
                 
         end
-        [eeg, gfp_peak_indices, gfp_curve] = preprocess(self, eeg);
+        [eeg, gfp_peak_indices, gfp_curve]  = preprocess(self, eeg, nch);
+        [eeg] = avgref(self, eeg, nch);
         [eeg] = detrendcolumnwise(self, eeg);
+        [eeg] = setgfpall1(self, eeg, gfp_curve);
+        [gfp_curve] = computegfp(self, eeg, method);
+        [gfp_peak_indices, gfp_peak_values, gfp_curve] = computegfppeaks(self, gfp_curve);
         [cv] = computecv(self, data, templates, clust_ind, ClusterNr);
         [w] = computew(self, data, clust_ind, ClusterNr);
         [m] = computem(self, w, Nchans, ClusterNr);
         [kl] = computekl(self, mm);
+        [Vectors,Values,Psi] = pcevectors(self, A, numvecs, verbose);
+        [vectors values] = sortempp(self, vectors, values);
         [b_model, b_ind, b_loading, exp_var] = modifiedkmeans(self, eeg, n_mod, pmode, reruns);
         [b_model, ind, c, gfp] = aahc(self, eeg, n_mod, IgnorePolarity);
         [ clusteringResults ] = segmentation(self, data, gfp_peaks_indices );
         [ expVar, prototypes, statesSequence, cv, kl ] = extractsegmentationstruct( self, clusteringResults, ntemplatesToExtract );  
-        [ backfittingResults ] = computemsparameters( self, eeg, maps);
+        [ output ] = computemsparameters( self, eeg, maps, nch);
         [ meanDur, meanOcc, gev, totalGev, meanCov, statesSequence, singleCorrelations ] = extractbackfittingstruct( self, backfittingResults );
     end
    

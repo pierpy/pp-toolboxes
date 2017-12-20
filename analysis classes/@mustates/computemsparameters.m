@@ -1,4 +1,4 @@
-function [ output ] = computemsparameters( self, eeg, maps)
+function [ output ] = computemsparameters( self, eeg, maps, nch)
 tic
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
@@ -25,13 +25,13 @@ tic
         end       
         % detrend
         epoch_mean = mean(epoch,2);
-        epoch = epoch - repmat(epoch_mean, 1, self.confstruct.nch);
+        epoch = epoch - repmat(epoch_mean, 1, nch);
         if (self.confstruct.debug)
             disp(strcat('epoch ', num2str(ep_idx), ' column mean subtracted'))
         end
         % detrend
         maps_mean = mean(maps, 2);
-        maps = maps - repmat(maps_mean, 1, self.confstruct.nch);
+        maps = maps - repmat(maps_mean, 1, nch);
         if (self.confstruct.debug)
             disp(strcat('epoch ', num2str(ep_idx), ' maps column mean subtracted'))
         end

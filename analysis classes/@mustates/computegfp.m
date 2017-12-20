@@ -1,4 +1,4 @@
-function gfp_curve = computegfp(eeg, method)
+function gfp_curve = computegfp(self, eeg, method)
     ntf = size(eeg,1);
     gfp_curve = zeros(1,ntf);
     if strcmp(method,'GFPL2')
